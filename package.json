@@ -1,0 +1,29 @@
+{
+    "name": "odin-todo-list",
+    "version": "1.0.0",
+    "description": "Todo List created with HTML, CSS, and JS.",
+    "main": "index.js",
+    "dependencies": {
+        "webpack": "^5.72.1",
+        "webpack-cli": "^4.9.2"
+    },
+    "devDependencies": {
+        "webpack-dev-server": "^4.9.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack serve --open",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BrookJacob/odin-todo-list.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BrookJacob/odin-todo-list/issues"
+    },
+    "homepage": "https://github.com/BrookJacob/odin-todo-list#readme"
+}
