@@ -1,0 +1,26 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid: 2fr 12fr 1fr / 1fr;
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+main {
+    display: grid;
+    grid: 2fr 4fr;
+}
+
+footer {
+    display: flex;
+    background-color: aquamarine;
+}
