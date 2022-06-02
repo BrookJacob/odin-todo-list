@@ -1,4 +1,4 @@
-# [TheOdinProject](https://www.theodinproject.com/): Todo List
+# [TheOdinProject:](https://www.theodinproject.com/) Todo List
 
 Todo List created with HTML, CSS, and JS.
 
