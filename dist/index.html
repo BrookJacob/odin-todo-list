@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
     <title>TheOdinProject: Todo List</title>
 </head>
 
@@ -15,9 +16,23 @@
         <h1>Todo List</h1>
     </header>
     <main>
-        <div class="sidebar"></div>
-        <div class="content"></div>
+        <nav class="sidebar">
+            <ul class="projects">
+                <li class="project"><button class="project-button active-project" type="button">Test Project 1</button></li>
+                <li class="project"><button class="project-button" type="button">Test Project 1</button></li>
+                <li class="project"><button class="project-button" type="button">Test Project 1</button></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <button class="item-add" type="button">&#43;</button>
+        </div>
     </main>
+    <div id="cover"></div>
+    <div id="dialog" role="dialog" aria-labelledby="title" aria-describedby="description">
+        <h1 id="title">Title of the dialog</h1>
+        <p id="description">Information provided by the dialog.</p>
+        <button id="close" aria-label="close">×</button>
+    </div>
     <footer>
         <div>
             <p>Made as part of <a href="https://www.theodinproject.com/">TheOdinProject</a>.</p>

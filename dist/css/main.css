@@ -18,8 +18,12 @@ header {
 }
 
 header h1 {
+    margin: 0 0 0 24px;
     font-family: "Bebas Neue";
-    margin-left: 24px;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #fff;
 }
 
 main {
@@ -28,9 +32,65 @@ main {
 }
 
 .sidebar {
-    width: 100%;
-    height: 100%;
+    padding: 24px;
     background-color: cadetblue;
+    min-width: max-content;
+}
+
+.sidebar>ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+    margin: 24px 0;
+}
+
+.project-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue";
+}
+
+.project-button:hover:not(.active-project) {
+    color: blue;
+}
+
+.active-project {
+    color: darksalmon;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.item-add {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0 18px;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
+    background-color: hotpink;
+    font-size: 4rem;
+    font-weight: 900;
+    color: beige;
+}
+
+.item-add:hover,
+.item-add:active {
+    background-color: aqua;
+    color: black;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .5);
+    transition: all .2s;
 }
 
 footer {
@@ -54,4 +114,41 @@ footer a {
 
 .github-logo-link img {
     margin: auto 12px;
+}
+
+[role="dialog"] {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 1em;
+    max-height: 30vh;
+    max-width: 50vw;
+    background: #ddd;
+    box-shadow: 0.25em 0.25em #aaa;
+    display: none;
+    border: 0;
+}
+
+[role="dialog"][open] {
+    display: block;
+}
+
+#cover {
+    background: rgba(0, 0, 0, .4);
+    opacity: 0.75;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.fade {
+    filter: blur(4px);
 }
